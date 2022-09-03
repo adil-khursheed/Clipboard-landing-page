@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    --strong-cyan: hsl(171, 66%, 44%);
+    --strong-cyan-shadow: hsl(171, 63%, 40%);
+    --light-blue: hsl(233, 100%, 69%);
+    --light-blue-shadow: hsl(233, 85%, 60%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --footer-blue: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+/*----BODY CSS STARTS----*/
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background: #fff url(images/bg-header-desktop.png) no-repeat;
+    background-position: top;
+    background-size: contain;
+    text-align: center;
+}
+/*----BODY CSS ENDS----*/
+
+/*----HEADER STARTS----*/
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+.logo img{
+    width: 110px;
+}
+/*----HEADER ENDS----*/
+
+/*----MAIN SECTION STARTS----*/
+.hero-section,
+.snippets-section,
+.access-section{
+    padding: 4rem 0 6rem 0;
+}
+
+.hero-section .hero-heading{
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    color: var(--dark-grayish-blue);
+    margin-bottom: 1rem;
+}
+
+.hero-section .hero-para{
+    font-size: clamp(1rem, 3vw, 1.13rem);
+    max-width: 650px;
+    margin: 0 auto 3rem;
+    color: var(--grayish-blue);
+    line-height: 1.6;
+}
+
+.btn{
+    text-decoration: none;
+    color: #fff;
+    font-size: clamp(0.8rem, 6vw, 1rem);
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    
+}
+
+.ios-btn{
+    background-color: var(--strong-cyan);
+    box-shadow: 0px 3px 0px var(--strong-cyan-shadow);
+    margin-right: 0.4rem;
+}
+
+.ios-btn:active{
+    filter: brightness(120%);
+}
+
+.mac-btn{
+    background-color: var(--light-blue);
+    box-shadow: 0px 3px 0px var(--light-blue-shadow);
+    margin-left: 0.4rem;
+}
+
+.mac-btn:active{
+    filter: brightness(120%);
+}
+
+.main-section-headings{
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    color: var(--dark-grayish-blue);
+    margin-bottom: 1.5rem;
+}
+
+.main-section-paras{
+    font-size: clamp(0.9rem, 3vw, 1.05rem);
+    max-width: 650px;
+    margin: 0 auto 4rem;
+    color: var(--grayish-blue);
+    line-height: 1.6;
+}
+
+.snippets-about{
+    display: flex;
+    gap: 6rem;
+}
+
+.mac-img img{
+    width: 700px;
+}
+
+.snippets-detail{
+    text-align: left;
+    max-width: 320px;
+    margin-top: 2.5rem;
+}
+
+.snippets h2, .workflow-insights h2{
+    color: var(--dark-grayish-blue);
+    line-height: 2;
+    font-size: clamp(1.125rem, 6vw, 1.4rem);
+}
+
+.snippets p, .workflow-insights p{
+    font-size: clamp(0.8rem, 3vw, 0.9rem);
+    color: var(--grayish-blue);
+    line-height: 1.8;
+    margin-bottom: 3rem;
+}
+
+.device-img{
+    max-width: 800px;
+    padding-top: 2rem;
+}
+
+.workflow-section{
+    padding-bottom: 6rem;
+}
+
+.workflow-insights{
+    /* width: 100%; */
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.icon-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.icon{
+    width: 35px;
+}
+
+.preview-icon{
+    margin-top: 0.5rem;
+}
+
+.insights-para{
+    max-width: 320px;
+}
+
+.brands-section{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+
+.brand-logo{
+    width: 150px;
+}
+
+.app-download-section{
+    padding: 5rem 0 10rem;
+}
+
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 2rem 0;
+    background-color: var(--footer-blue);
+    text-align: left;
+}
+
+footer p {
+    color: var(--grayish-blue);
+    line-height: 2.5;
+}
+
+.grid-1, .grid-5{
+    align-self: center;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5{
+    justify-self: center;
+}
+
+.grid-1{
+    grid-column: 1 / 3;
+}
+
+.grid-1 img{
+    width: 50px;
+}
+
+.grid-5{
+    grid-column: 6 / 9;
+}
+
+.grid-5 a{
+    margin-right: 1rem;
+}
+
+footer .fa-brands{
+    font-size: 1.8rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+
+footer a:active{
+    color: var(--strong-cyan);
+}
+
+
+@media only screen and (max-width: 1024px){
+
+    main{
+        padding: 0 2rem;
+    }
+
+    .snippets-about{
+        flex-direction: column;
+    }
+
+    .mac-img img, .device-img{
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .snippets-detail{
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .snippets{
+        width: 200px;
+    }
+
+    .access-section{
+        padding: 0 0 6rem 0;
+    }
+
+    .device-img{
+        padding-top: 0;
+    }
+
+    .brands-section{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .grid-1{
+        grid-column: 1 / 9;
+        margin-bottom: 1rem;
+    }
+
+    .grid-2{
+        grid-column: 1 / 4;
+    }
+
+    .grid-3{
+        grid-column: 4 / 6;
+    }
+
+    .grid-4{
+        grid-column: 6 / 9;
+    }
+    .grid-5{
+        grid-column: 1 / 9;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .btn{
+        display: block;
+    }
+
+    .ios-btn{
+        margin-right: 0;
+    }
+
+    .mac-btn{
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    .snippets{
+        width: 100%;
+    }
+
+    .brands-section{
+        gap: 4rem;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .grid-2{
+        grid-column: 1 / 9;
+    }
+
+    .grid-3{
+        grid-column: 1 / 9;
+    }
+
+    .grid-4{
+        grid-column: 1 / 9;
+    }
+}
